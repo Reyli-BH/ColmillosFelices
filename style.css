@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  background: #aaffee;
 }
 
 main .container {
@@ -256,73 +257,107 @@ footer .container {
   }
 }*/
 
-/* Estilos generales para el footer */
+/* Estilos para el footer */
+
 .footer {
-  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  background-color: #003344;
+  color: #ffffff;
   padding: 40px 0;
+  font-size: 16px;
 }
 
-/* Estilos para los enlaces del footer */
-.footer ul li a {
-  color: #777;
+.footer .container {
+  justify-self: center;
+  align-self: center;
 }
 
-.footer ul li a:hover {
-  color: #333;
+.footer h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-/* Estilos para el botón "Suscríbete" */
-.btn-primary {
-  background-color: #337ab7;
-  border-color: #2e6da4;
-  color: #fff;
+.footer ul li {
+  margin-bottom: 10px;
 }
 
-.btn-primary:hover {
-  background-color: #286090;
-  border-color: #204d74;
-  color: #fff;
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-/* Estilos para el formulario de suscripción */
-.footer form {
-  margin-top: 20px;
+.footer a:hover {
+  color: #e74c3c;
 }
 
-.footer form input[type="email"] {
+.footer .list-unstyled {
+  list-style: none;
+}
+
+.footer form .form-control {
+  height: 50px;
   border-radius: 0;
 }
 
-.footer form button[type="submit"] {
+.footer form .btn {
+  height: 50px;
   border-radius: 0;
 }
 
-/* Estilos para los íconos de contacto */
-.footer p i {
+.footer p {
+  margin-bottom: 20px;
+}
+
+.footer .fa, .footer .fas {
+  color: #e74c3c;
   margin-right: 10px;
-  color: #337ab7;
 }
 
-/* Estilos para el texto "Hecho con <3 por ChatGPT" */
+.footer hr {
+  border-color: #555555;
+}
+
 .footer p.text-center {
   margin-top: 20px;
   font-size: 14px;
-  color: #777;
 }
 
-/* Estilos para pantallas pequeñas */
-@media (max-width: 767px) {
+.col-md-12 {
+  text-align: center;
+}
+
+/* Estilos para pantallas grandes */
+
+@media screen and (min-width: 992px) {
+  .footer {
+    padding: 80px 0;
+  }
+  
   .footer h3 {
-    margin-top: 20px;
+    font-size: 24px;
   }
-
-  .footer form {
-    margin-top: 0;
+  
+  .footer ul li {
+    margin-bottom: 15px;
   }
-
+  
+  .footer form .form-control {
+    height: 60px;
+  }
+  
+  .footer form .btn {
+    height: 60px;
+  }
+  
   .footer p {
-    margin-bottom: 0;
+    margin-bottom: 30px;
+  }
+  
+  .footer p.text-center {
+    font-size: 16px;
   }
 }
-
 
