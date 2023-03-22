@@ -140,7 +140,7 @@ main .container {
 
 /*Footer*/
 
-footer {
+/*footer {
   background-color: #333;
   color: white;
   padding: 40px 0;
@@ -254,4 +254,75 @@ footer .container {
   .social a:hover {
     transform: translateX(-5px);
   }
+}*/
+
+/* Estilos generales para el footer */
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 0;
 }
+
+/* Estilos para los enlaces del footer */
+.footer ul li a {
+  color: #777;
+}
+
+.footer ul li a:hover {
+  color: #333;
+}
+
+/* Estilos para el botón "Suscríbete" */
+.btn-primary {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #286090;
+  border-color: #204d74;
+  color: #fff;
+}
+
+/* Estilos para el formulario de suscripción */
+.footer form {
+  margin-top: 20px;
+}
+
+.footer form input[type="email"] {
+  border-radius: 0;
+}
+
+.footer form button[type="submit"] {
+  border-radius: 0;
+}
+
+/* Estilos para los íconos de contacto */
+.footer p i {
+  margin-right: 10px;
+  color: #337ab7;
+}
+
+/* Estilos para el texto "Hecho con <3 por ChatGPT" */
+.footer p.text-center {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .footer h3 {
+    margin-top: 20px;
+  }
+
+  .footer form {
+    margin-top: 0;
+  }
+
+  .footer p {
+    margin-bottom: 0;
+  }
+}
+
+
