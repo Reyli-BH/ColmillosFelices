@@ -266,6 +266,7 @@ footer .container {
   color: #ffffff;
   padding: 40px 0;
   font-size: 16px;
+  padding: 20px;
 }
 
 .footer .container {
@@ -327,6 +328,11 @@ footer .container {
 
 .col-md-12 {
   text-align: center;
+}
+
+.col-md-12 a {
+  color: #aaffaa;
+  text-shadow: 0px 0px 10px #aaffaa;
 }
 
 /* Estilos para pantallas grandes */
