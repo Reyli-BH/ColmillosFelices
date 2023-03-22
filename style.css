@@ -31,7 +31,7 @@ main .container {
   transform: perspective(800px) rotateY(0deg);
   transition: all 0.5s ease;
   position: relative;
-  /*perspective: 1000px;*/
+  perspective: 800px;
 }
 
 .page:first-child {
@@ -67,13 +67,13 @@ main .container {
   transform: rotateY(180deg);
 }
 
-.page:hover .card-front {
+/*.page:hover .card-front {
   transform: rotateY(180deg);
 }
 
 .page:hover .card-back {
   transform: rotateY(0deg);
-}
+}*/
 
 @media (min-width: 768px) {
   .page {
