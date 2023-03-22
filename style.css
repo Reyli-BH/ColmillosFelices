@@ -16,6 +16,7 @@ main .container {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  margin-bottom: 50px;
   /*height: 100vh;*/
 }
 
@@ -24,14 +25,11 @@ main .container {
   max-width: 300px;
   height: 400px;
   margin: 20px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 0px;
+  background-color: transparent;
   transform: perspective(800px) rotateY(0deg);
   transition: all 0.5s ease;
   position: relative;
-  perspective: 800px;
 }
 
 .page:first-child {
@@ -52,7 +50,10 @@ main .container {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  transition: transform 0.6s ease;
+  transition: all 0.6s ease;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  
 }
 
 .card-front {
@@ -66,14 +67,6 @@ main .container {
   color: white;
   transform: rotateY(180deg);
 }
-
-/*.page:hover .card-front {
-  transform: rotateY(180deg);
-}
-
-.page:hover .card-back {
-  transform: rotateY(0deg);
-}*/
 
 @media (min-width: 768px) {
   .page {
