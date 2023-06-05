@@ -58,7 +58,7 @@ main .container {
 }
 
 .card-front {
-  background-color: #ff0000;
+  background-color: #2ecc71;
   color: white;
   transform: rotateY(0deg);
 }
